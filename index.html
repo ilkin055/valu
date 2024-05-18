@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta çeviricisi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./Asset 1@3x 1.svg" alt="bank logo">
+        <nav>
+            <p>BANK</p>
+            <p>BİZNES</p>
+            <p>İNVESTİSİYA</p>
+            <p>SIGORTA</p>
+            <p>MOBİL</p>
+            <p>SEFERLER</p>
+            <p>EYLENCE</p>
+        </nav>
+        <button>
+            GİRİS
+        </button>
+    </header>
+    <main>
+        <div class="container">
+            <h1>valute ceviren</h1>
+            <div class="calculators">
+                <div class="calculator first">
+                    <div class="explain">
+                        <p>var</p>
+                    </div>
+                    <div class="currencies">
+                        <button class="rub">RUB</button>
+                        <button class="usd">USD</button>
+                        <button class="eur">EUR</button>
+                        <button class="azn">AZN</button>
+                    </div>
+                    <div class="input">
+                        <input type="number" onkeydown="return event.keyCode !== 69">
+                        <p class="rate"></p>
+                    </div>
+                </div>
+                <div class="calculator last">
+                    <div class="explain">
+                        <p>alacam</p>
+                    </div>
+                    <div class="currencies">
+                        <button class="rub">RUB</button>
+                        <button class="usd">USD</button>
+                        <button class="eur">EUR</button>
+                        <button class="azn">AZN</button>
+                    </div>
+                    <div class="input">
+                        <input type="number" onkeydown="return event.keyCode !== 69">
+                        <p class="rate"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="alert display-none">
+                <p>mumkun deyil</p>
+            </div>
+        </div> 
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
